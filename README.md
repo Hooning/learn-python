@@ -12,6 +12,7 @@ A beginner-friendly Python learning repository covering fundamental concepts and
 | `3_input.py`           | User Input       | Reading input from users                                         |
 | `4_data_type.py`       | Data Types       | Strings, integers, floats, sets, tuples, dictionaries, and lists |
 | `5_string_function.py` | String Functions | String methods, slicing, searching, and validation               |
+| `06_numbers.py`        | Numbers          | Numeric types, math operators, rounding, and random numbers      |
 
 ## Getting Started
 
@@ -42,6 +43,12 @@ python 0_hello.py
     - Searching (`find`, `startswith`, `endswith`, `in`)
     - Validation (`isdigit`, `isnumeric`, `isalpha`)
     - Whitespace cleanup (`strip`, `lstrip`, `rstrip`)
+- **Numbers** - Working with numeric types:
+    - Type conversion (`int`, `float`, `complex`)
+    - Math operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
+    - Rounding (`round`, `ceil`, `floor`, `trunc`)
+    - Random numbers (`random`, `randint`)
+    - Validation (`is_integer`, `isinstance`)
 
 ## License
 
