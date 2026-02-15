@@ -87,7 +87,7 @@ print(date[8:10])  # Extract day
 print(date[8:])  # Extract day
 print(date[-2:])  # Extract day
 
-# Cleaning Strings
+# Whitespace clean up
 raw_input = "   Hello, World!   "
 cleaned_input = raw_input.strip()
 print(cleaned_input)
@@ -102,3 +102,67 @@ raw_input = "Hello, World!   "
 cleaned_input = raw_input.rstrip()
 print(cleaned_input)
 print(len(cleaned_input))
+
+text = "Engineering"
+print(len(text))
+print(len(text.strip()))
+
+num_of_spaces = len(text) - len(text.strip())
+is_clean = len(text) == len(text.strip())
+print(f"Number of leading and trailing spaces: {num_of_spaces}")
+print(f"Is the text clean? {is_clean}")
+
+# Clean Cases
+text = "python PROGRAMING"
+print(text.lower())
+print(text.upper())
+print(text.title())
+
+# Case Conversions
+search = "   Email"
+data = "emAil  "
+
+print(search == data)
+print(search.lower() == data.lower())
+print(search.strip().lower() == data.strip().lower())
+
+# Challenge
+text = "968-Maria, ( D@t@ Engineer );; 27y  "
+cleaned_text = text.strip().replace("968-", "name: ").replace(",", " |").replace("(",
+                                                                                 "role: ").replace("D@t@", "data").replace(" );;", " | age: ").replace("y", "").lower()
+print(cleaned_text)
+
+# Search in strings
+date = "2026-Feb-10"
+print(date.startswith("2026"))
+print(date.endswith("10"))
+
+# Using 'in' operator (what you have)
+print("Feb" in date)  # Returns True/False
+
+# Using find() - returns index or -1 if not found
+print(date.find("Feb"))      # Returns 5
+print(date.find("Feb") != -1)  # Returns True/False
+
+# Using index() - returns index or raises ValueError if not found
+print(date.index("Feb"))     # Returns 5
+
+# Using count() - returns number of occurrences
+print(date.count("Feb") > 0)  # Returns True/False
+
+# Validating string
+country = "USA"
+print(country.isalpha())
+
+# isdigit() vs isnumeric()
+# ---------------------------------------------------------------
+# Method       | Accepts                                | Examples
+# ---------------------------------------------------------------
+# isdigit()    | 0-9 digits, superscripts, subscripts   | "123", "²", "₃"
+# isnumeric()  | All of isdigit() + fractions,          | "½", "Ⅳ", "三"
+#              | Roman numerals, etc.                   | (Chinese 3)
+# ---------------------------------------------------------------
+phone = "0123456789"
+print(phone.isdigit())
+print(phone.isnumeric())
+print("Ⅳ".isnumeric())
