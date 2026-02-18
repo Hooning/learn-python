@@ -54,7 +54,7 @@ else:
     print("Access denied")
 
 # Challenge
-# 1. Check if a user's name is not empty and
+# 1. Check if a user"s name is not empty and
 #    the age is greater than or equal to 18
 name = "David"
 age = 17

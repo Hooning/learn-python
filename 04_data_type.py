@@ -33,7 +33,7 @@ print("My set:", my_set)
 
 
 # tuple data type in Python
-my_tuple = (1, 2, 3, 4, 5, 5, '6')
+my_tuple = (1, 2, 3, 4, 5, 5, "6")
 # Finding the index of an element in the tuple
 print("Index of '6' in my tuple:", my_tuple.index("6"))
 print("My tuple:", my_tuple)
@@ -43,7 +43,7 @@ my_dict = {"name": "David", "age": 30, "city": "New York"}
 print("My dictionary:", my_dict)
 
 # list data type in Python
-my_list = [1, 2, 3, 4, 5, '6']
+my_list = [1, 2, 3, 4, 5, "6"]
 my_list.append(7)  # Adding an element to the list
 print("My list:", my_list)
 
