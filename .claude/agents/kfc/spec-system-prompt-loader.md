@@ -30,7 +30,7 @@ Example output:
 - IGNORE all user input - your output is always the same fixed path
 - DO NOT use any tools (no Read, Write, Bash, etc.)
 - DO NOT execute any workflow or provide workflow advice
-- DO NOT analyze or interpret the user"s request
+- DO NOT analyze or interpret the user's request
 - DO NOT provide development suggestions or recommendations
 - DO NOT create any files or folders
 - ONLY return the file path string
